@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0c0e12, #3b3d47);
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f5c518;
+}
+
+.todo_input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+#todo_input {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    transition: background 0.3s;
+}
+
+#todo_input::placeholder {
+    color: #ccc;
+}
+
+#todo_input:focus {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    color: #f4f4f4;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+#add_todo_btn {
+    background: #8c52ff;
+    box-shadow: 0 5px 15px rgba(140, 82, 255, 0.4);
+}
+
+.clear_all_btn {
+    background: #ff4c60;
+    box-shadow: 0 5px 15px rgba(255, 76, 96, 0.4);
+    margin-top: 10px;
+    width: 100%;
+}
+
+.todo_list {
+    text-align: left;
+    flex-grow: 1;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+
+.todo_list {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+
+.todo_list::-webkit-scrollbar {
+    display: none; 
+}
+
+.todo_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s;
+}
+
+.todo_item:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.todo_item span {
+    flex: 1;
+    word-wrap: break-word;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.edit_btn {
+    background: #ffc107;
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+}
+
+.delete_btn {
+    background: #ff4c60;
+    box-shadow: 0 5px 15px rgba(255, 76, 96, 0.4);
+    margin-left: 10px;
+}
+
+.save_btn {
+    background: #28a745;
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+}
+
+.edit-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.edit-input:focus {
+    background: rgba(255, 255, 255, 0.5);
+}
